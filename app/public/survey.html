@@ -1,6 +1,6 @@
 <html lang="en"><head>
 	<meta charset="UTF-8">
-	<title>FriendFinder</title>
+	<title>Which Overwatch Hero are You?</title>
 
 	<!-- Latest compiled and minified CSS & JS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -11,8 +11,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
 	<!-- Chosen -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.2/chosen.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.2/chosen.jquery.min.js"></script>
+
+	<!-- Style.css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 <body>
@@ -26,125 +29,125 @@
 		<h4>Name (Required)</h4>
 		<input type="text" name="" id="name" class="form-control" required="">
 
-		<h4>Link to Photo Image (Required)</h4>
-		<input type="text" name="" id="photo" class="form-control" required="">
+		<!-- <h4>Link to Photo Image (Required)</h4>
+		<input type="text" name="" id="photo" class="form-control" required=""> -->
 
 		<hr>
 
 		<h3><strong>Question 1</strong></h3>
-		<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q1" style="display: none;">
+		<h4>Which of the following sports do you prefer?</h4>
+	 	<select data-placeholder="" class="chosen-select" id="q1" style="display: block;">
 	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q1_chosen"><a class="chosen-single"><span>2</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result result-selected" data-option-array-index="2" style="">2</li><li class="active-result" data-option-array-index="3" style="">3</li><li class="active-result" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
+            <option value="1">Football</option>
+            <option value="2">Baseball</option>
+            <option value="3">Basketball</option>
+            <option value="4">Soccer</option>
+            <option value="5">I don't like any of these sports.</option>
+      	</select><div class="chosen-container chosen-container-single" style="width: 157px; display: none" title="" id="q1_chosen"><a class="chosen-single"><span>2</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result result-selected" data-option-array-index="2" style="">2</li><li class="active-result" data-option-array-index="3" style="">3</li><li class="active-result" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
 
 		<h3><strong>Question 2</strong></h3>
-		<h4>Generally speaking, you rely more on your experience than your imagination.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q2" style="display: none;">
+		<h4>Do you enjoy helping others?</h4>
+	 	<select data-placeholder="" class="chosen-select" id="q2" style="display: block;">
 	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q2_chosen"><a class="chosen-single"><span>2</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result result-selected" data-option-array-index="2" style="">2</li><li class="active-result" data-option-array-index="3" style="">3</li><li class="active-result" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
+            <option value="1">No, I hate other people.</option>
+            <option value="2">Not really, but I will if I have to.</option>
+            <option value="3">I'll help people if they ask me to.</option>
+            <option value="4">I enjoy helping others occasionally.</option>
+            <option value="5">I frequently go out of my way to help others.</option>
+      	</select><div class="chosen-container chosen-container-single" style="width: 157px; display: none" title="" id="q2_chosen"><a class="chosen-single"><span>2</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result result-selected" data-option-array-index="2" style="">2</li><li class="active-result" data-option-array-index="3" style="">3</li><li class="active-result" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
 
 
 		<h3><strong>Question 3</strong></h3>
-		<h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q3" style="display: none;">
+		<h4>Rate your honesty on a scale between 1 and 5.  Be honest.</h4>
+	 	<select data-placeholder="" class="chosen-select" id="q3" style="display: block;">
 	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
+            <option value="1">1 (I'm basically a con-artist.)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q3_chosen"><a class="chosen-single"><span>2</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result result-selected" data-option-array-index="2" style="">2</li><li class="active-result" data-option-array-index="3" style="">3</li><li class="active-result" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
+            <option value="5">5 (I'm 100% honest. Always.)</option>
+      	</select><div class="chosen-container chosen-container-single" style="width: 157px; display: none" title="" id="q3_chosen"><a class="chosen-single"><span>2</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result result-selected" data-option-array-index="2" style="">2</li><li class="active-result" data-option-array-index="3" style="">3</li><li class="active-result" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
 
 
 		<h3><strong>Question 4</strong></h3>
-		<h4>You rarely do something just out of sheer curiosity.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q4" style="display: none;">
+		<h4>How clean do you keep your room?</h4>
+	 	<select data-placeholder="" class="chosen-select" id="q4" style="display: block;">
 	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q4_chosen"><a class="chosen-single"><span>3</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result" data-option-array-index="2" style="">2</li><li class="active-result result-selected" data-option-array-index="3" style="">3</li><li class="active-result" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
+            <option value="1">I rarely clean.  My room is a mess.</option>
+            <option value="2">My room is clean about once a week.</option>
+            <option value="3">I keep my room decently cleaned.</option>
+            <option value="4">I keep my room pretty clean.</option>
+            <option value="5">Very! I clean daily and my room is always organized and tidy.</option>
+      	</select><div class="chosen-container chosen-container-single" style="width: 157px; display: none" title="" id="q4_chosen"><a class="chosen-single"><span>3</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result" data-option-array-index="2" style="">2</li><li class="active-result result-selected" data-option-array-index="3" style="">3</li><li class="active-result" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
 
 
 		<h3><strong>Question 5</strong></h3>
 		<h4>People can rarely upset you.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q5" style="display: none;">
+	 	<select data-placeholder="" class="chosen-select" id="q5" style="display: block;">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5 (Strongly Agree)</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q5_chosen"><a class="chosen-single"><span>2</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result result-selected" data-option-array-index="2" style="">2</li><li class="active-result" data-option-array-index="3" style="">3</li><li class="active-result" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
+      	</select><div class="chosen-container chosen-container-single" style="width: 157px; display: none" title="" id="q5_chosen"><a class="chosen-single"><span>2</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result result-selected" data-option-array-index="2" style="">2</li><li class="active-result" data-option-array-index="3" style="">3</li><li class="active-result" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
 
 
 		<h3><strong>Question 6</strong></h3>
-		<h4>It is often difficult for you to relate to other people’s feelings.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q6" style="display: none;">
+		<h4>How spontaneous are you?</h4>
+	 	<select data-placeholder="" class="chosen-select" id="q6" style="display: block;">
 	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
+            <option value="1">1 (Not at all.)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q6_chosen"><a class="chosen-single"><span>2</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result result-selected" data-option-array-index="2" style="">2</li><li class="active-result" data-option-array-index="3" style="">3</li><li class="active-result" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
+            <option value="5">5 (Very!)</option>
+      	</select><div class="chosen-container chosen-container-single" style="width: 157px; display: none" title="" id="q6_chosen"><a class="chosen-single"><span>2</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result result-selected" data-option-array-index="2" style="">2</li><li class="active-result" data-option-array-index="3" style="">3</li><li class="active-result" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
 
 
 		<h3><strong>Question 7</strong></h3>
-		<h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q7" style="display: none;">
+		<h4>Do you consider yourself hard to read?</h4>
+	 	<select data-placeholder="" class="chosen-select" id="q7" style="display: block;">
 	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q7_chosen"><a class="chosen-single"><span>4</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result" data-option-array-index="2" style="">2</li><li class="active-result" data-option-array-index="3" style="">3</li><li class="active-result result-selected" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
+            <option value="1">Yes, I keep a lid on all of my emotions and thoughts.</option>
+            <option value="2">Most of the time.</option>
+            <option value="3">Sometimes.</option>
+            <option value="4">I'm pretty easy to read.</option>
+            <option value="5">No, I am extremely open.</option>
+      	</select><div class="chosen-container chosen-container-single" style="width: 157px; display: none" title="" id="q7_chosen"><a class="chosen-single"><span>4</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result" data-option-array-index="2" style="">2</li><li class="active-result" data-option-array-index="3" style="">3</li><li class="active-result result-selected" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
 
 		<h3><strong>Question 8</strong></h3>
-		<h4>You rarely get carried away by fantasies and ideas.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q8" style="display: none;">
+		<h4>Which genre of movies do you prefer?</h4>
+	 	<select data-placeholder="" class="chosen-select" id="q8" style="display: block;">
 	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q8_chosen"><a class="chosen-single"><span>2</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result result-selected" data-option-array-index="2" style="">2</li><li class="active-result" data-option-array-index="3" style="">3</li><li class="active-result" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
+            <option value="1">Horror</option>
+            <option value="2">Sci-Fi</option>
+            <option value="3">Action/Adventure</option>
+            <option value="4">Comedy</option>
+            <option value="5">Drama</option>
+      	</select><div class="chosen-container chosen-container-single" style="width: 157px; display: none" title="" id="q8_chosen"><a class="chosen-single"><span>2</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result result-selected" data-option-array-index="2" style="">2</li><li class="active-result" data-option-array-index="3" style="">3</li><li class="active-result" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
 
 		<h3><strong>Question 9</strong></h3>
-		<h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q9" style="display: none;">
+		<h4>If you had $1,000,000 to spend, which of the following would you most-likely do?</h4>
+	 	<select data-placeholder="" class="chosen-select" id="q9" style="display: block;">
 	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q9_chosen"><a class="chosen-single"><span>1 (Strongly Disagree)</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result result-selected" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result" data-option-array-index="2" style="">2</li><li class="active-result" data-option-array-index="3" style="">3</li><li class="active-result" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
+            <option value="1">Buy nice vehicles.</option>
+            <option value="2">Buy a new house or a vacation house.</option>
+            <option value="3">Travel.</option>
+            <option value="4">Spend it on friends and family.</option>
+            <option value="5">Donate to charities.</option>
+      	</select><div class="chosen-container chosen-container-single" style="width: 157px; display: none" title="" id="q9_chosen"><a class="chosen-single"><span>1 (Strongly Disagree)</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result result-selected" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result" data-option-array-index="2" style="">2</li><li class="active-result" data-option-array-index="3" style="">3</li><li class="active-result" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
 
 		<h3><strong>Question 10</strong></h3>
-		<h4>You feel more energetic after spending time with a group of people.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q10" style="display: none;">
+		<h4>How creative are you?</h4>
+	 	<select data-placeholder="" class="chosen-select" id="q10" style="display: block;">
 	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
+            <option value="1">1 (Not creative at all)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-      	</select><div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q10_chosen"><a class="chosen-single"><span>1 (Strongly Disagree)</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result result-selected" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result" data-option-array-index="2" style="">2</li><li class="active-result" data-option-array-index="3" style="">3</li><li class="active-result" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
+            <option value="5">5 (Very creative)</option>
+      	</select><div class="chosen-container chosen-container-single" style="width: 157px; display: none" title="" id="q10_chosen"><a class="chosen-single"><span>1 (Strongly Disagree)</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result result-selected" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result" data-option-array-index="2" style="">2</li><li class="active-result" data-option-array-index="3" style="">3</li><li class="active-result" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
 
 		<br>
 		<br>
@@ -185,6 +188,11 @@
 	</div>
 
   <script type="text/javascript">
+
+  	$("select").on("click", function() {
+  		$(this).toggleClass("chosen-with-drop chosen-container-active");
+  		console.log($("#q1").val());
+  	})
 
   	// Chosen CSS
     var config = {
@@ -227,6 +235,8 @@
 	    		scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
 	    	}
 
+	    	console.log(userData);
+
 
 	    	// Grab the URL of the website
 	    	var currentURL = window.location.origin;
@@ -250,7 +260,6 @@
     	
     	return false;
     });
-
 
   </script>
 
